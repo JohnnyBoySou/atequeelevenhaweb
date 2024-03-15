@@ -26,7 +26,7 @@ export const Days_Abril = [
     {
         title: "Palavra do dia",
         time: "12 min",
-        day: 2,
+        day: 3,
         month: 'Abril',
         pastor: "Roberval",
         versiculoCaption: "Matheus 32:1",
