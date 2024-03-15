@@ -1,6 +1,6 @@
 export const Shorts_Original = [
     {
-        id: 1, title: 'Como vencer a ansiedade', desc: 'para vencer a ansiadede', url: 'https://i.pinimg.com/736x/05/25/dd/0525dd4af0c6e038eef7bf13b09f8e87.jpg' 
+        id: 1, title: 'Como vencer a ansiedade', desc: 'Vencer a ansiedade pode ser um desafio, mas existem várias estratégias que podem ajudar: \n\nRespiração profunda: Praticar técnicas de respiração profunda pode acalmar seu sistema nervoso e reduzir a ansiedade. Experimente respirar lenta e profundamente, concentrando-se na sua respiração.', url: 'https://i.pinimg.com/736x/05/25/dd/0525dd4af0c6e038eef7bf13b09f8e87.jpg' 
     },
     {
         id: 2, title: 'Como vencer a ansiedade', desc: 'para vencer a ansiadede', url: 'https://i.pinimg.com/736x/43/17/36/431736564cb0cfaad832c833f6681ccc.jpg'
