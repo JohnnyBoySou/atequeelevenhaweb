@@ -2,7 +2,8 @@ export const Days_Abril = [
     {
         title: "Palavra do dia",
         time: "6 min",
-        day: "1 de Abril",
+        day: 1,
+        month: 'Abril',
         pastor: "Sousa",
         versiculoCaption: "Josué 1:9",
         versiculo: "Não fui eu que ordenei a você? Seja forte e corajoso! Não se apavore nem desanime, pois o Senhor, o seu Deus, estará com você por onde você andar.",
@@ -13,8 +14,9 @@ export const Days_Abril = [
     {
         title: "Palavra do dia",
         time: "8 min",
-        day: "2 de Abril",
-        pastor: "Sousa",
+        day: 2,
+        month: 'Abril',
+        pastor: "Khevi",
         versiculoCaption: "Proverbíos 4:7",
         versiculo: "Não fui eu que ordenei a você? Seja forte e corajoso! Não se apavore nem desanime, pois o Senhor, o seu Deus, estará com você por onde você andar.",
         desc: "É um lembrete de que Josué não estava sozinho nessa jornada. Deus estava com ele em todos os momentos, dando-lhe força, coragem e proteção. \n\nEssas palavras não são apenas para Josué, mas são um lembrete atemporal para todos nós enfrentarmos os desafios da vida. \n\nElas nos lembram que não importa o que enfrentemos, podemos confiar na presença e no apoio de Deus, e isso nos dá a coragem necessária para seguir em frente, mesmo diante das adversidades.",
@@ -24,8 +26,9 @@ export const Days_Abril = [
     {
         title: "Palavra do dia",
         time: "12 min",
-        day: "3 de Abril",
-        pastor: "Sousa",
+        day: 2,
+        month: 'Abril',
+        pastor: "Roberval",
         versiculoCaption: "Matheus 32:1",
         versiculo: "Não fui eu que ordenei a você? Seja forte e corajoso! Não se apavore nem desanime, pois o Senhor, o seu Deus, estará com você por onde você andar.",
         desc: "É um lembrete de que Josué não estava sozinho nessa jornada. Deus estava com ele em todos os momentos, dando-lhe força, coragem e proteção. \n\nEssas palavras não são apenas para Josué, mas são um lembrete atemporal para todos nós enfrentarmos os desafios da vida. \n\nElas nos lembram que não importa o que enfrentemos, podemos confiar na presença e no apoio de Deus, e isso nos dá a coragem necessária para seguir em frente, mesmo diante das adversidades.",
