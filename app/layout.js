@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from 'next/font/local'
 
@@ -98,7 +97,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" className={`${AmandineFont.variable} font-sans ${MundialFont.variable} font-mono`}>
+    <html lang="pt-BR" className={`${AmandineFont.variable} font-mono ${MundialFont.variable} font-sans`}>
       <body >{children}</body>
     </html>
   );

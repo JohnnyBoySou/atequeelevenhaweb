@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, createContext } from 'react'
 
 const getInitialTheme = () => {
     if (typeof window !== 'undefined' && window.localStorage) {
-        // checks for a previous user preference in localStorage, and uses the browser's color scheme as a backup:
         const storedPref = window.localStorage.getItem('color-theme')
         if (typeof storedPref === 'string') {
             return storedPref
@@ -15,7 +14,7 @@ const getInitialTheme = () => {
         return 'light' // light theme as the default;
     }
 }
-export const ThemeContext = React.createContext()
+export const ThemeContext = createContext()
 
 export const ThemeProvider = ({ initialTheme, children }) => {
     const [theme, setTheme] = useState(getInitialTheme)
