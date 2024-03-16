@@ -23,15 +23,15 @@ export const Shorts_Original = [
         id: 8,
         title: 'Você ora?',
         desc: 'E você não sente que tem alguem do outro lado',
-        url: "https://i.pinimg.com/videos/thumbnails/originals/91/43/b7/9143b73819acf588859c0094cbfee716.0000000.jpg",
-        video: 'https://v1.pinimg.com/videos/mc/720p/91/43/b7/9143b73819acf588859c0094cbfee716.mp4',
+        url: "https://i.pinimg.com/564x/37/0c/f0/370cf06cf738c0c1b7ef2151eebd1147.jpg",
+        video: 'https://v1.pinimg.com/videos/mc/720p/b6/be/25/b6be258965a660525b48d8ed8f95a4e1.mp4',
     },
     {
         id: 9, 
         title: 'Motivação diária',
         desc: 'Se motive para essa semana',
-        url: 'https://i.pinimg.com/videos/thumbnails/originals/73/3a/22/733a22b9ca028f784c75d987a051fc42.000000.jpg',
-        video: 'https://v1.pinimg.com/videos/mc/720p/73/3a/22/733a22b9ca028f784c75d987a051fc42.mp4'
+        url: 'https://i.pinimg.com/564x/e1/1f/d0/e11fd006d79da41147773b34e904f49f.jpg',
+        video: 'https://v1.pinimg.com/videos/mc/720p/47/e3/63/47e3632721873aae3d851c8fc4fca901.mp4'
     },
     {
         id: 10, 
@@ -52,6 +52,6 @@ export const Shorts_Original = [
         title: 'Jesus está voltando',
         desc: 'E você está preparado?',
         url: 'https://i.pinimg.com/videos/thumbnails/originals/d1/78/59/d17859245484a6db67a10d2df862b621.0000000.jpg',
-        video: 'https://br.pinterest.com/pin/576953402292287108/'
+        video: 'https://v1.pinimg.com/videos/mc/720p/d1/78/59/d17859245484a6db67a10d2df862b621.mp4'
     },
 ]
