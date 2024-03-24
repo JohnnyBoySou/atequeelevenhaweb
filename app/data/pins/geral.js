@@ -84,157 +84,151 @@ export const Geral = [
         tag: "Papel de Parede",
     },
     {
-        id: 15,
+        id: "15",
         title: '',
         image: 'https://i.pinimg.com/236x/e5/bb/57/e5bb575382154bd8f7c56b7029029e93.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 16,
+        id: "16",
         title: '',
         image: 'https://i.pinimg.com/474x/33/09/3b/33093b3249057bb82f63510a4f32ef04.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 17,
+        id: "17",
         title: '',
         image: 'https://i.pinimg.com/236x/22/22/ea/2222ea38e6431869ea5a59758cdd80c0.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 18,
+        id: "18",
         title: '',
         image: 'https://i.pinimg.com/236x/52/02/8d/52028db21d1f47dd3518eda0338b4ecc.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 19,
+        id: "19",
         title: '',
         image: 'https://i.pinimg.com/236x/d8/9c/e2/d89ce2a383c82095f44dc0b5779871e4.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 20,
+        id: "20",
         title: '',
         image: 'https://i.pinimg.com/236x/3a/41/e6/3a41e69b86e2e9314d8aa7cc299ebcfe.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 21,
+        id: "21",
         title: '',
         image: 'https://i.pinimg.com/564x/d8/64/e0/d864e0feda7e0b2138e980d23b7e95ea.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 22,
+        id: "22",
         title: '',
         image: 'https://i.pinimg.com/236x/e7/8a/0a/e78a0ac2f949785cca6fcfbd2968379b.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 23,
+        id: "23",
         title: '',
         image: 'https://i.pinimg.com/236x/b0/7a/a6/b07aa63cd5c47b8b1a8d1d74d66c940d.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 24,
+        id: "24",
         title: '',
         image: 'https://i.pinimg.com/236x/a5/5b/ed/a55bed253cbf7bc02aec858958e51495.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 25,
-        title: '',
-        image: 'https://i.pinimg.com/236x/b0/7a/a6/b07aa63cd5c47b8b1a8d1d74d66c940d.jpg',
-        tag: 'Papel de Parede'
-    },
-    {
-        id: 26,
+        id: "26",
         title: '',
         image: 'https://i.pinimg.com/236x/29/ed/49/29ed49f92e62b82365d01a5448dc671e.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 27,
+        id: "27",
         title: '',
         image: 'https://i.pinimg.com/236x/f0/f3/bf/f0f3bf4c256cdb67e03f7e0a1e1e94eb.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 28,
+        id: "28",
         title: '',
         image: 'https://i.pinimg.com/564x/f3/ff/f8/f3fff8685c1f4451319f98aade446912.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 29,
+        id: "29",
         title: '',
         image: 'https://i.pinimg.com/564x/2f/4e/d5/2f4ed50804baf7da428dafc7ea0d2aa8.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 30,
+        id: "30",
         title: '',
         image: 'https://i.pinimg.com/564x/94/6f/e9/946fe9313471a4b6fa282a98682f2eda.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 31,
+        id: "31",
         title: '',
         image: 'https://i.pinimg.com/564x/4d/a2/24/4da22431ecaaebabb0b0bc6a4662a5f4.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 32,
+        id: "32",
         title: '',
         image: 'https://i.pinimg.com/236x/4f/12/0c/4f120cc8cae4186c71c80d88739d6304.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 33,
+        id: "33",
         title: '',
         image: 'https://i.pinimg.com/564x/af/d7/21/afd72193707a60a37ba36cc0c415fb0b.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 34,
+        id: "34",
         title: '',
         image: 'https://i.pinimg.com/564x/fe/2a/d9/fe2ad9a6c97f9ff640679de15926d008.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 35,
+        id: "35",
         title: '',
         image: 'https://i.pinimg.com/564x/e1/f6/31/e1f63183b766414203ce0c20534400f9.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 36,
+        id: "36",
         title: '',
         image: 'https://i.pinimg.com/564x/d3/3c/1f/d33c1f2593f1d34bb9e6389575ae55ac.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 37,
+        id: "37",
         title: '',
         image: 'https://i.pinimg.com/564x/88/d5/e2/88d5e2fa7f7eb87186a556f28365b29d.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 38,
+        id: "38",
         title: '',
         image: 'https://i.pinimg.com/736x/40/37/ed/4037ed23c65745c17e4a2cd75ef2f463.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 39,
+        id: "39",
         title: '',
         image: 'https://i.pinimg.com/564x/c3/22/ae/c322aeb1b92c3445053542d18da51a91.jpg',
         tag: 'Papel de Parede'
     },
     {
-        id: 40,
+        id: "40",
         title: '',
         image: 'https://i.pinimg.com/564x/dd/9d/3f/dd9d3f1c7986efb505510da718a82449.jpg',
         tag: 'Papel de Parede'
