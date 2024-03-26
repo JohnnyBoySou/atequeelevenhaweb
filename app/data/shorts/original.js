@@ -56,4 +56,11 @@ export const Shorts_Original = [
         url: 'https://i.pinimg.com/videos/thumbnails/originals/d1/78/59/d17859245484a6db67a10d2df862b621.0000000.jpg',
         video: 'https://v1.pinimg.com/videos/mc/720p/d1/78/59/d17859245484a6db67a10d2df862b621.mp4'
     },
+    {
+        id: 13, 
+        title: 'Jesus está voltando',
+        desc: 'E você está preparado?',
+        url: 'https://i.pinimg.com/videos/thumbnails/originals/89/4d/22/894d22ed755f9e126a399346e96a7f2b.0000000.jpg',
+        video: 'https://v1.pinimg.com/videos/mc/720p/89/4d/22/894d22ed755f9e126a399346e96a7f2b.mp4'
+    },
 ]
