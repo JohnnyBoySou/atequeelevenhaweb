@@ -1,5 +1,5 @@
 import {NextResponse } from 'next/server'
-import { Shorts_Original } from '@/app/data/shorts/original'
+import { Shorts_Original } from '../../data/shorts/original'
 
 export async function GET(request) {
   return NextResponse.json(
