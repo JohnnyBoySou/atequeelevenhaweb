@@ -17,8 +17,9 @@ export default function Signin() {
             signInWithPopup(auth, provider)
             .then((result) => {
                 setuser(result.user);
-                setUser(result.user)
-                router.push('/home');
+                setUser(result.user).then(res => 
+                    router.push('/home')
+                )
             })
             .catch((error) => {
                 console.log(error);

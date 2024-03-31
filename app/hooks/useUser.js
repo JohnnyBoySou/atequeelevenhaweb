@@ -1,5 +1,6 @@
-'use client';
-const getUser = () => { 
+import React from 'react';
+
+const getUser =  () => { 
     const user = localStorage.getItem('user');
     return user ? JSON.parse(user) : undefined;
  }
