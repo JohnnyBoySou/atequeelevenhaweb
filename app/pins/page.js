@@ -6,3 +6,4 @@ function Pins(){
         </Column>    
     )
 }
+export default Pins;
