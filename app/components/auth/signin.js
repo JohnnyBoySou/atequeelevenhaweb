@@ -6,32 +6,38 @@ const login = require('@assets/imgs/login.png');
 import { GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
 import { auth } from '@api/firebase';
 import { useRouter } from 'next/navigation';
-import { getUser } from '@hooks/useUser';
+import { getUser, setUser } from '@hooks/useUser';
 
 export default function Signin() {
-    const userdate = getUser();    
-    const [user, setuser] = useState(userdate);
+    const [user, setuser] = useState([]);
     const router = useRouter();
-    
-    useEffect(() => {
-        if (user) {
-            router.push('/home');
-        }
-    }, [user]);
-    
-    function handleSinginGoogle(){
-        const provider = new GoogleAuthProvider();
-        signInWithPopup(auth, provider)
-        .then((result) => {
-            setuser(result.user);
-            localStorage.setItem('user', JSON.stringify(result.user));
-            router.push('/home');
-        })
-        .catch((error) => {
-            console.log(error);
-        });
-    }
 
+    async function handleSinginGoogle(){
+            const provider = new GoogleAuthProvider();
+            signInWithPopup(auth, provider)
+            .then((result) => {
+                setuser(result.user);
+                localStorage.setItem('user', JSON.stringify(result.user));
+                router.push('/home');
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+    const verify = async () => { 
+        const userdate = await getUser();   
+        if(userdate != undefined){
+            setuser(userdate);
+            router.push('/home');
+        }else{
+            return;
+        }
+     }
+
+
+    useEffect(() => {
+        verify()
+    }, []);
 
     return (
         <Main>
@@ -44,7 +50,7 @@ export default function Signin() {
             <Label>Faça login para aproveitar varias funções exclusivas.</Label>
             <Spacer />
 
-            {user ? 
+            {user.length > 1 ? 
             <Column style={{ border: '2px solid #26262626' , borderRadius: 12, padding: 12, }}>
 
             <Row>

@@ -1,7 +1,7 @@
 'use client';
 const getUser = () => { 
     const user = localStorage.getItem('user');
-    return user ? JSON.parse(user) : {};
+    return user ? JSON.parse(user) : undefined;
  }
 
 const deleteUser = () => { 
@@ -9,5 +9,10 @@ const deleteUser = () => {
     return true
 }
 
-export { getUser, deleteUser }
+const setUser = ({user}) => { 
+    localStorage.setItem('user', JSON.stringify(user));
+    return true
+ }
+
+export { getUser, deleteUser, setUser }
  
