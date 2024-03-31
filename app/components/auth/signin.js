@@ -2,12 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import { Column, Row, Main, Title, Label, OutBt, Spacer, } from '@theme/global';
 import Image from 'next/image';
-
 const login = require('@assets/imgs/login.png');
-
 import { GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
 import { auth } from '@api/firebase';
-import {  useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 export default function Signin() {
     const [user, setuser] = useState();
