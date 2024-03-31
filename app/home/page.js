@@ -40,7 +40,13 @@ export default function Home() {
     <Column style={{ justifyContent: 'center', alignItems: 'center', width:1200, alignSelf:'center',  flexWrap: 'wrap',  }}>
       <Row style={{ flexWrap: 'wrap' }}>
         <Column style={{ width: 400,  }}>
-          <Title style={{ fontSize: 52, lineHeight: 1,}}>{saudacao}, <br/>{user.displayName} <img src="https://camo.githubusercontent.com/0c732027af8a28d138e3698181f7be7c9b97d443b4beb9c7ce8ec4cffc6b4767/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966" width={60} height={60} alt='hands' /></Title>
+          <img src={user.photoURL} width={120} height={120} alt='user' style={{ objectFit: 'contain', borderRadius: 100, }}/>
+         <Row style={{  alignItems: 'center', }}>
+            <Title style={{ fontSize: 52, lineHeight: 0.9, marginRight: 12,}}>{saudacao}, <br/>{user.displayName} </Title>
+            <img src="https://camo.githubusercontent.com/0c732027af8a28d138e3698181f7be7c9b97d443b4beb9c7ce8ec4cffc6b4767/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966" width={60} height={60} alt='hands' />
+          </Row>
+          <Calendar />
+       
         </Column>
 
         <Column style={{ flexGrow: 1, }}>
@@ -103,3 +109,35 @@ export default function Home() {
     </Main>
   );
 }
+
+
+const Calendar = () => { 
+  const [days, setDays] = useState([
+    { id: 1, day: 1, month: 'Junho', complete: true, lock: false, },
+    { id: 2, day: 2, month: 'Junho', complete: false, lock: true, },
+    { id: 3, day: 3, month: 'Junho', complete: false, lock: true, },
+    { id: 4, day: 4, month: 'Junho', complete: false, lock: true, },
+  ]);
+
+  const Card = ({ item }) => {
+    return (
+            <Column style={{
+                width: 80, height: 200, marginRight: 12, justifyContent: 'center', alignItems: 'center', borderRadius: 100,
+                backgroundColor: item?.complete ? colors.primary : colors.primary, opacity: item?.complete ? 1 : 0.6,
+            }}>
+                <Title style={{ transform: 'rotate(90deg)', width: 200, marginTop: 100, fontSize: 22, fontWeight: 300, color: '#fff' }}>{item?.day}  de  {item?.month}</Title>
+            </Column>
+    )
+
+}
+  return(
+    <Column style={{ marginTop: 30, }}>
+    <Title style={{ fontWeight: 400, }}>Seu progresso</Title>
+      <Row style={{marginTop: 20, }}>
+        {days.map((item) => (
+          <Card key={item.id} item={item} />
+        ))}
+      </Row>
+    </Column>
+  )
+ }
