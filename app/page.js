@@ -1,14 +1,13 @@
 'use client';
-import { ArrowUpRight, Menu, Search, ShoppingCart } from 'lucide-react';
-import React, { useState } from "react";
-import { Column, Main, Row, Title, Spacer, CircleBt, Label, ButtonLight , OutBt} from '@theme/global';
+import { ArrowUpRight, Menu, Search, } from 'lucide-react';
+import React  from "react";
+import { Column, Main, Row, Title, Spacer, CircleBt, Label, ButtonLight , } from '@theme/global';
 import Image from 'next/image';
 import Link from 'next/link';
 import colors from '@theme/colors';
 import Signin from '@components/auth/signin';
 
 const logo = require('@assets/imgs/logo_sticker.png');
-const login = require('@assets/imgs/login.png');
 const audio = require('@assets/imgs/audio.png');
 
 export default function Start() {

@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import { Column, Row, Main, Title, Label, OutBt, Spacer, Progress, } from '@theme/global';
+import { Column, Row, Main, Title, Label, OutBt, Spacer, } from '@theme/global';
 import Image from 'next/image';
 
 const login = require('@assets/imgs/login.png');
@@ -33,7 +33,7 @@ export default function Signin() {
             setuser(JSON.parse(user));
             router.push('/home')
         }
-    }, []);
+    }, [router, user]);
 
     return (
         <Main>
