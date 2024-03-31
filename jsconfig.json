@@ -8,6 +8,7 @@
       "@hooks/*": ["hooks/*"],
       "@api/*": ["api/*"],
       "@theme/*": ["theme/*"],
+      "@context/*": ["context/*"],
     }
   }
 }

@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR" className={`${AmandineFont.variable} font-mono ${MundialFont.variable} font-sans`}>
       <body >
-      <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );

@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import colors from '@theme/colors';
 
 export const Main = styled.main`
   flex-direction: column;
+  display: flex;
   background-color: #FFF7EC;
   padding: 12px;
 `
@@ -10,14 +12,32 @@ export const Spacer = styled.div`
   width: 20px;
   height: 20px;
   `
+  export const Progress = styled.progress`
+    width: 100%;
+    height: 30px;
+  `
+
+
 
 export const Title = styled.h1`
   font-size: 32px;
+  line-height: 32px;
   color: #142B74;
   font-family: 'Mundial';
   font-weight: 500;
   margin: 0px;
 `;
+
+export const Label = styled.span`
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: #2A3D7799;
+  font-family: 'Mundial';
+  font-weight: 400;
+`;
+
+
 
 export const CircleBt = styled.div`
   border: none;
@@ -30,6 +50,35 @@ export const CircleBt = styled.div`
   height: 50px;
   background: #f6f6f6;
   cursor: pointer;
+  transition: .2s linear;
+  color: ${colors.primary};
+  &:hover {
+    background-color: #262626;
+    color: #fff;
+    transform: scale(0.9);
+  }
+ 
+`
+
+
+export const OutBt = styled.div`
+  border: 2px solid ${colors.primary}40;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-family: Mundial;
+  font-size: 18px;
+  transition: .2s linear;
+  color: ${colors.primary};
+  &:hover {
+    background-color: ${colors.primary};
+    color: #fff;
+    transform: scale(0.9);
+  }
  
 `
 
@@ -47,13 +96,6 @@ export const Error = styled.div`
 export const B = styled.span`
   font-family: 'Bold';
 `
-export const Label = styled.span`
-  font-size: ${props => props.theme.size.label};
-  color: ${props => props.theme.color.label};
-  font-family: 'Book';
-`;
-
-
 export const Button = styled.button`
   border: none;
   cursor: pointer;
@@ -77,19 +119,22 @@ export const ButtonPrimary = styled.button`
   }
 `;
 
-export const ButtonPrimaryLight = styled.button`
+export const ButtonLight = styled.button`
   border: none;
   padding: 8px 20px; 
   border-radius: 100px; 
   background-color: #fff;
-  color: ${props => props.theme.color.off};
+  color: ${colors.primary};
   transition: .2s linear;
-  font-family: 'Medium';
+  font-family: 'Mundial';
+  font-weight: 400;
   font-size: 18px;
   cursor: pointer;
+  transition: linear .2s;
   &:hover {
-    background-color: ${props => props.theme.color.primary};
-    color:  ${props => props.theme.color.title};
+    background-color: ${colors.secundary};
+    color: #fff;
+    transform: scale(0.9);
   }
 `;
 

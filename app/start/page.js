@@ -5,15 +5,13 @@ import { Column, Main, Row, Title, Spacer, CircleBt, Label, ButtonLight , OutBt}
 import Image from 'next/image';
 import Link from 'next/link';
 import colors from '@theme/colors';
-import { getUser } from '@hooks/useUser';
+import Signin from '@components/auth/signin';
 
 const logo = require('@assets/imgs/logo_sticker.png');
+const login = require('@assets/imgs/login.png');
 const audio = require('@assets/imgs/audio.png');
 
-export default function Home() {
-  const user = getUser();
-  const saudacao = new Date().getHours() < 12 ? 'Bom dia' : new Date().getHours() < 18 ? 'Boa tarde' : 'Boa noite';
-
+export default function Start() {
   return (
     <Main>
       <Row style={{ justifyContent: 'space-between', alignItems: 'center', marginBottom:20,}}>
@@ -37,11 +35,10 @@ export default function Home() {
         </Row>
       </Row>
 
-    <Column style={{ justifyContent: 'center', alignItems: 'center', width:1200, alignSelf:'center',  flexWrap: 'wrap',  }}>
+    <Column  style={{ justifyContent: 'center', alignItems: 'center', width:1200, alignSelf:'center',  flexWrap: 'wrap',  }}>
       <Row style={{ flexWrap: 'wrap' }}>
-        <Column style={{ width: 400,  }}>
-          <Title style={{ fontSize: 52, lineHeight: 1,}}>{saudacao}, <br/>{user.displayName} <img src="https://camo.githubusercontent.com/0c732027af8a28d138e3698181f7be7c9b97d443b4beb9c7ce8ec4cffc6b4767/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966" width={60} height={60} alt='hands' /></Title>
-        </Column>
+        
+       <Signin />
 
         <Column style={{ flexGrow: 1, }}>
           <Row style={{ justifyContent: 'center', alignItems: 'center',  }}>
@@ -100,6 +97,8 @@ export default function Home() {
         </Column>
       </Row>
       </Column>
+
+
     </Main>
   );
 }
