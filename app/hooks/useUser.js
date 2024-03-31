@@ -1,18 +1,24 @@
 import React from 'react';
 
 const getUser =  () => { 
-    const user = localStorage.getItem('user');
-    return user ? JSON.parse(user) : undefined;
+    if (typeof window !== 'undefined') {
+        const user = localStorage.getItem('user');
+        return user ? JSON.parse(user) : undefined;
+    }
  }
 
 const deleteUser = () => { 
-    localStorage.removeItem('user');
-    return true
+    if (typeof window !== 'undefined') {
+        localStorage.removeItem('user');
+        return true
+    }
 }
 
 const setUser = ({user}) => { 
-    localStorage.setItem('user', JSON.stringify(user));
-    return true
+    if (typeof window !== 'undefined') {
+        localStorage.setItem('user', JSON.stringify(user));
+        return true
+    }
  }
 
 export { getUser, deleteUser, setUser }
