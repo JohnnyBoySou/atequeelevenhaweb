@@ -55,10 +55,10 @@ export default function Signin() {
             <Column style={{ border: '2px solid #26262626' , borderRadius: 12, padding: 12, }}>
 
             <Row>
-                <img src={user.photoURL} width={56} height={56} alt='user' style={{ borderRadius: 12, }}/>
+                <img src={user?.photoURL} width={56} height={56} alt='user' style={{ borderRadius: 12, }}/>
                 <Column style={{ marginLeft: 12, justifyContent: 'center', }}>
-                    <Title style={{ fontSize: 24, marginTop: -6, }}>{user.displayName}</Title>
-                    <Label style={{ fontSize: 18, marginTop: -6, }}>{user.email}</Label>
+                    <Title style={{ fontSize: 24, marginTop: -6, }}>{user?.displayName}</Title>
+                    <Label style={{ fontSize: 18, marginTop: -6, }}>{user?.email}</Label>
                 </Column>
             </Row>
             </Column>
