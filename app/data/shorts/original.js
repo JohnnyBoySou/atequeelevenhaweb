@@ -63,4 +63,18 @@ export const Shorts_Original = [
         url: 'https://i.pinimg.com/videos/thumbnails/originals/89/4d/22/894d22ed755f9e126a399346e96a7f2b.0000000.jpg',
         video: 'https://v1.pinimg.com/videos/mc/720p/89/4d/22/894d22ed755f9e126a399346e96a7f2b.mp4'
     },
+    {
+        id: 14, 
+        title: 'Jesus está voltando',
+        desc: 'E você está preparado?',
+        url: 'https://i.pinimg.com/videos/thumbnails/originals/65/c6/f7/65c6f7c8d2a4e4f14f8fef18857747ce.0000000.jpg',
+        video: 'https://v1.pinimg.com/videos/mc/720p/65/c6/f7/65c6f7c8d2a4e4f14f8fef18857747ce.mp4'
+    },
+    {
+        id: 15, 
+        title: 'Jesus está voltando',
+        desc: 'E você está preparado?',
+        url: 'https://i.pinimg.com/videos/thumbnails/originals/63/25/f4/6325f4f25bd9c474a069576083be1905.0000000.jpg',
+        video: 'https://v1.pinimg.com/videos/mc/720p/63/25/f4/6325f4f25bd9c474a069576083be1905.mp4'
+    },
 ]
