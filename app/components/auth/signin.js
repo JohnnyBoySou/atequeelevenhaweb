@@ -17,7 +17,7 @@ export default function Signin() {
             signInWithPopup(auth, provider)
             .then((result) => {
                 setuser(result.user);
-                localStorage.setItem('user', JSON.stringify(result.user));
+                setUser(result.user)
                 router.push('/home');
             })
             .catch((error) => {
