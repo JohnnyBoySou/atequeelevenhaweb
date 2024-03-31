@@ -6,32 +6,32 @@ const login = require('@assets/imgs/login.png');
 import { GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
 import { auth } from '@api/firebase';
 import { useRouter } from 'next/navigation';
+import { getUser } from '@hooks/useUser';
 
 export default function Signin() {
-    const [user, setuser] = useState();
+    const userdate = getUser();    
+    const [user, setuser] = useState(userdate);
     const router = useRouter();
+    
+    useEffect(() => {
+        if (user) {
+            router.push('/home');
+        }
+    }, [user]);
+    
     function handleSinginGoogle(){
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth, provider)
         .then((result) => {
             setuser(result.user);
             localStorage.setItem('user', JSON.stringify(result.user));
-            setTimeout(() => {
-                router.push('/home')
-            }, 1200);
+            router.push('/home');
         })
         .catch((error) => {
             console.log(error);
         });
     }
 
-    useEffect (() => {
-        const user = localStorage.getItem('user');
-        if(user){
-            setuser(JSON.parse(user));
-            router.push('/home')
-        }
-    }, [router, user]);
 
     return (
         <Main>
