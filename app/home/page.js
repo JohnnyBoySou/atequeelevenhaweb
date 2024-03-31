@@ -43,9 +43,9 @@ export default function Home() {
      
         {/*Profile*/}
         <Column style={{ width: 400,  }}>
-          <img src={user.photoURL} width={120} height={120} alt='user' style={{ objectFit: 'contain', borderRadius: 100, }}/>
+          <img src={user?.photoURL} width={120} height={120} alt='user' style={{ objectFit: 'contain', borderRadius: 100, }}/>
          <Row style={{  alignItems: 'center', }}>
-            <Title style={{ fontSize: 52, lineHeight: 0.9, marginRight: 12,}}>{saudacao}, <br/>{user.displayName} </Title>
+            <Title style={{ fontSize: 52, lineHeight: 0.9, marginRight: 12,}}>{saudacao}, <br/>{user?.displayName} </Title>
             <img src="https://camo.githubusercontent.com/0c732027af8a28d138e3698181f7be7c9b97d443b4beb9c7ce8ec4cffc6b4767/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966" width={60} height={60} alt='hands' />
           </Row>
           <Calendar />
