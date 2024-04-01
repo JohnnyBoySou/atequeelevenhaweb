@@ -83,6 +83,28 @@ export const OutBt = styled.div`
 `
 
 
+export const PinBt = styled.div`
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  align-content: center;
+  text-align: center;
+  margin-right: 10px;
+  cursor: pointer;
+  font-family: Mundial;
+  font-size: 18px;
+  transition: .2s linear;
+  color: ${colors.primary};
+  &:hover {
+    background-color: ${colors.secundary};
+    color: #fff;
+    transform: scale(0.9);
+  }
+ 
+`
+
+
 export const Error = styled.div`
   font-size: ${props => props.theme.size.label};
   color: ${props => props.theme.color.red};

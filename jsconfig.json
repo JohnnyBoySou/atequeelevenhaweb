@@ -9,6 +9,7 @@
       "@api/*": ["api/*"],
       "@theme/*": ["theme/*"],
       "@context/*": ["context/*"],
+      "@requests/*": ["requests/*"],
     }
   }
 }

@@ -17,7 +17,7 @@ export default function Start() {
         <Image src={logo} alt="Logo" width={200} height={100} style={{ objectFit: 'contain' }} />
 
         <Row style={{ justifyContent: 'space-between', alignItems: 'center', width: 500, }}>
-          <Link href="/about">
+          <Link href="/pins">
             <Title>Pins</Title>
           </Link>
           <Link href="/fem">
@@ -63,9 +63,11 @@ export default function Start() {
               <Column style={{ backgroundColor: "#FFE2BA", padding: 24,  borderRadius: 32,  width: 300, height: 200,  justifyContent: 'space-between',   }}>
                 <Row style={{ justifyContent: 'space-between', alignItems: 'center',  }}>
                   <Title style={{ fontWeight: 400, }}>Pins <br/>Cristões</Title>
-                  <CircleBt>
-                    <ArrowUpRight strokeWidth={1.25}  size={42}/>
-                  </CircleBt>
+                  <Link href="/pins">
+                    <CircleBt >
+                      <ArrowUpRight strokeWidth={1.25}  size={42}/>
+                    </CircleBt>
+                  </Link>
                 </Row>
                 <Label>Crie sua própria coleção</Label>
                 <Row style={{ justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: -24, marginLeft: 24, marginRight: 24,}}>

@@ -1,0 +1,10 @@
+.mansory-layout{
+    column-gap: 1em;
+    column-count: 6;
+}
+
+.mansory-item{
+    break-inside: avoid;
+    margin-bottom: 0.8em;
+
+}

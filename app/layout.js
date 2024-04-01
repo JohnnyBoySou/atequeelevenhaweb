@@ -1,7 +1,6 @@
 import localFont from 'next/font/local'
 import StyledComponentsRegistry from './theme/registry'
 import './reset.css'
-
 const AmandineFont = localFont({
   name: "Amandine",
   src: [
