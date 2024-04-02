@@ -5,7 +5,7 @@ import colors from '@theme/colors';
 import { getPins, FILTERS } from '@requests/pins'
 import './pins.css'
 import { DragDropContext, Droppable, Draggable  } from 'react-beautiful-dnd';
-
+import { Library, Combine } from 'lucide-react';
 
 function Pins(){
     const [pins, setpins] = useState();
@@ -16,12 +16,7 @@ function Pins(){
         getPins().then(data => setpins(data))
     }, [])
 
-
-    const Pin = ({itm, isDragging }) => { 
-        return (
-            <img src={itm.image} alt={itm.title}  style={{ width: '100%', height: 'auto', borderRadius: 24,   transform: isDragging ? 'scale(0.6)' : 'scale(1)'}} />
-        )
-     }
+ 
 
      const [collections, setCollections] = useState([
         {
@@ -30,7 +25,7 @@ function Pins(){
             capa: 'https://i.pinimg.com/236x/15/a4/a3/15a4a30cb7a18b2868e8ee8587c3726e.jpg',
             pins: [
                 {
-                    name: 'Pin1',
+                    title: 'Pin1',
                     capa: 'https://i.pinimg.com/564x/51/c5/7f/51c57f0b4917206a10fd7775b1353d5b.jpg',
                     id: 12,
                 }
@@ -83,23 +78,21 @@ function Pins(){
     
 
 
-    const Collection = ({itm, isDraggingOver }) => {
-        return(
-            <Column style={{ marginBottom: 12,  backgroundColor: isDraggingOver ? 'red' : 'transparent'}}>
-                <img src={itm.capa} alt={itm.name} style={{ width:62, height: 62, borderRadius: 12,  }} />
-                <Label style={{ fontSize: 16, textAlign: 'center', }}>{itm.name}</Label>
-                {itm.pins.map((pin) => (
-                   <Label key={pin}>{pin.title}</Label>
-                ))}
-            </Column>
-        )
-    }
 
     const CollectionsList = () => {
+        
+        const Collection = ({itm, isDraggingOver }) => {
+            return(
+                <Row style={{ marginBottom: 12,  backgroundColor: isDraggingOver ? colors.green : 'transparent', justifyContent: 'center', alignItems: 'center',  borderRadius: 12, padding:12, height: 84, width: 84, justifyContent: 'center', alignItems: 'center', }}>
+                    <img src={itm.capa} alt={itm.name} style={{ width:72, height: 72, borderRadius: 12, objectFit: 'cover' }} />
+                   {isDraggingOver &&  <Combine color='#fff' size={32} style={{ marginLeft: 12, }}/>}
+                </Row>
+            )
+        }
         return(
             <>
                 {collections.map((collection) => (
-                    <Droppable key={collection.id.toString()} droppableId={collection.id.toString()}>
+                    <Droppable key={collection.id.toString()} droppableId={collection.id.toString()} isCombineEnabled>
                         {(provided, snapshot) => (
                             <div
                                 ref={provided.innerRef}
@@ -115,8 +108,12 @@ function Pins(){
         )
     }
     const Cards = () => { 
+        const Pin = ({itm, isDragging }) => { 
+            return (
+                <img src={itm.image} alt={itm.title}  style={{ width:  '100%', height: 'auto', borderRadius: 24, objectFit: 'cover', transition: 'linear .2s',    transform: isDragging ? 'scale(0.5)' : 'scale(1)'       }} />
+            )}
         return (
-            <Droppable droppableId="cards">
+            <Droppable droppableId="cards" isCombineEnabled>
                 {(provided, snapshot) => (
                     <div 
                         {...provided.droppableProps}
@@ -147,37 +144,30 @@ function Pins(){
 
     return (
         <DragDropContext onDragEnd={onDragEnd}>
-        <Main style={{}}>
-            <Row>
-                <Column style={{ borderRadius: 12, margin: '12px 12px 12px 0px', backgroundColor: '#F8E9DD',  alignItems: 'center', }}>
-                    <Title style={{ margin: 10, fontSize: 24,}}>Coleções</Title>
-                    <CollectionsList />
-                </Column>   
+        <Main style={{ overflowY: 'hidden',flexDirection: 'row', }}>
 
 
-            <Column>
-                <Title style={{}}>Pins</Title>
-                <Row style={{ margin: '20px 0px' }}>
-                    {FILTERS.map((filter) => (
-                        <PinBt
-                            onClick={() => settype(filter)}
-                            key={filter}
-                            style={{
-                                backgroundColor: type === filter && colors.primary,
-                                color: type === filter ? '#fff' : colors.title,
-                            }}
-                        >
-                            {filter}
-                        </PinBt>
-                    ))}
+            <Column style={{ borderRadius: 12, margin: '0px 12px 12px 0px',  height: '90vh',  padding: 24, backgroundColor: '#F8E9DD',  alignItems: 'center', }}>
+                
+                <Row style={{ padding: '10px 16px', borderRadius: 100, backgroundColor: colors.primary+20, justifyContent: 'center', alignItems: 'center',  }}>
+                    <Library color={colors.primary}/>
+                    <Label style={{ marginLeft: 5, fontSize: 18, color: colors.primary }}>Pastas</Label>
                 </Row>
+                <CollectionsList />
+             </Column>   
 
 
-                <Cards />
+            <Column style={{ margin: 12, }}>
+                <Title style={{}}>Pins Cristãos</Title>
+                <Row style={{ margin: '30px 0px', overflowX: 'auto', flex: 1, }}>
+                    {FILTERS.map((filter) => ( <PinBt onClick={() => settype(filter)}key={filter} style={{backgroundColor: type === filter && colors.primary, color: type === filter ? '#fff' : colors.title, }}>{filter}</PinBt>))}
+                </Row>
+                <Column style={{ overflowY: 'auto', height: '80vh',  borderRadius: 24, }}>
+                    <Cards />
+                </Column>
 
             </Column>
 
-            </Row>
         </Main>
         </DragDropContext>
     );
