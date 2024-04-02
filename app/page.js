@@ -20,7 +20,7 @@ export default function Start() {
           <Link href="/pins">
             <Title>Pins</Title>
           </Link>
-          <Link href="/fem">
+          <Link href="/shorts">
             <Title>Shorts</Title>
           </Link>
           <Link href="/masc">

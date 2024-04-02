@@ -22,13 +22,13 @@ export default function Home() {
         <Image src={logo} alt="Logo" width={200} height={100} style={{ objectFit: 'contain' }} />
 
         <Row style={{ justifyContent: 'space-between', alignItems: 'center', width: 500, }}>
-          <Link href="/about">
+          <Link href="/pins">
             <Title>Pins</Title>
           </Link>
-          <Link href="/fem">
+          <Link href="/shorts">
             <Title>Shorts</Title>
           </Link>
-          <Link href="/masc">
+          <Link href="/day">
             <Title>Palavra do dia</Title>
           </Link>
         </Row>
@@ -96,9 +96,11 @@ export default function Home() {
               <Column style={{ backgroundColor: "#262626", padding: 24,  borderRadius: 32,  width: 300, height: 200,  justifyContent: 'space-between',   }}>
                 <Row style={{ justifyContent: 'space-between', alignItems: 'center',  }}>
                   <Title style={{ fontWeight: 400, color: "#fff",}}>Vídeos <br/>Curtos</Title>
+                  <Link href="/shorts">
                   <CircleBt>
                     <ArrowUpRight strokeWidth={1.25}  size={42}/>
                   </CircleBt>
+                  </Link>
                 </Row>
                 <Row style={{  alignItems: 'flex-end', marginBottom: -24, marginTop: 24,}}>
                   <Column style={{ width: 140, height: 200, borderTopLeftRadius: 12, marginRight: 12,  borderTopRightRadius: 12, backgroundColor: "#FFFFFF60",  }}/>
