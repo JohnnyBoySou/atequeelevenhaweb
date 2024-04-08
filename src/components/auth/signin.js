@@ -30,7 +30,9 @@ export default function Signin() {
         const userdate = await getUser();   
         if(userdate != undefined){
             setuser(userdate);
-            router.push('/home');
+            setTimeout(() => {
+                router.push('/home');
+            }, 1500);
         }else{
             return;
         }

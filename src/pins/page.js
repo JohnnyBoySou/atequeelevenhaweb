@@ -83,7 +83,7 @@ function Pins(){
         
         const Collection = ({itm, isDraggingOver }) => {
             return(
-                <Row style={{ marginBottom: 12,  backgroundColor: isDraggingOver ? colors.green : 'transparent', justifyContent: 'center', alignItems: 'center',  borderRadius: 12, padding:12, height: 84, width: 84, justifyContent: 'center', alignItems: 'center', }}>
+                <Row style={{ marginBottom: 12,  backgroundColor: isDraggingOver ? colors.green : 'transparent', justifyContent: 'center', alignItems: 'center',  borderRadius: 12, padding:12, height: 72, width: 72, justifyContent: 'center', alignItems: 'center', }}>
                     <img src={itm.capa} alt={itm.name} style={{ width:72, height: 72, borderRadius: 12, objectFit: 'cover' }} />
                    {isDraggingOver &&  <Combine color='#fff' size={32} style={{ marginLeft: 12, }}/>}
                 </Row>
@@ -149,7 +149,7 @@ function Pins(){
 
             <Column style={{ borderRadius: 12, margin: '0px 12px 12px 0px',  height: '90vh',  padding: 24, backgroundColor: '#F8E9DD',  alignItems: 'center', }}>
                 
-                <Row style={{ padding: '10px 16px', borderRadius: 100, backgroundColor: colors.primary+20, justifyContent: 'center', alignItems: 'center',  }}>
+                <Row style={{ padding: '10px 16px', borderRadius: 100, marginBottom: 12, backgroundColor: colors.primary+20, justifyContent: 'center', alignItems: 'center',  }}>
                     <Library color={colors.primary}/>
                     <Label style={{ marginLeft: 5, fontSize: 18, color: colors.primary }}>Pastas</Label>
                 </Row>

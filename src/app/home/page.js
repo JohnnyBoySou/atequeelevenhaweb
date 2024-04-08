@@ -59,9 +59,11 @@ export default function Home() {
             <Column style={{ backgroundColor: colors.primary, width: 300, padding: 24,  borderRadius: 32, height: 300, }}>
               <Row style={{ justifyContent: 'space-between', alignItems: 'center',  }}>
                 <Title style={{ color: "#fff", fontWeight: 300, }}>Palavra <br/>do dia</Title>
+                <Link href="/day">
                 <CircleBt>
                   <ArrowUpRight strokeWidth={1.25}  size={42}/>
                 </CircleBt>
+                </Link>
               </Row>
 
               <Image src={audio} width={300} height={200} alt='audio' style={{ objectFit: 'contain', opacity: 0.6, margin: '-10px 0px', alignSelf: 'center',}}/>
