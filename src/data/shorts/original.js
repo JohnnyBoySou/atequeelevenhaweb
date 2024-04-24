@@ -44,37 +44,86 @@ export const Shorts_Original = [
     },
     {
         id: 11, 
-        title: 'Jesus é a salvação',
+        title: '...',
         desc: 'E a vida eterna. João 3:16',
         url: 'https://i.pinimg.com/videos/thumbnails/originals/cf/0d/1d/cf0d1dfb8c66f25845631a6013db0adf.0000000.jpg',
         video: 'https://v1.pinimg.com/videos/mc/720p/cf/0d/1d/cf0d1dfb8c66f25845631a6013db0adf.mp4'
     },
     {
         id: 12, 
-        title: 'Jesus está voltando',
-        desc: 'E você está preparado?',
+        title: '...',
+        desc: '...',
         url: 'https://i.pinimg.com/videos/thumbnails/originals/d1/78/59/d17859245484a6db67a10d2df862b621.0000000.jpg',
         video: 'https://v1.pinimg.com/videos/mc/720p/d1/78/59/d17859245484a6db67a10d2df862b621.mp4'
     },
     {
         id: 13, 
-        title: 'Jesus está voltando',
-        desc: 'E você está preparado?',
+        title: '...',
+        desc: '...',
         url: 'https://i.pinimg.com/videos/thumbnails/originals/89/4d/22/894d22ed755f9e126a399346e96a7f2b.0000000.jpg',
         video: 'https://v1.pinimg.com/videos/mc/720p/89/4d/22/894d22ed755f9e126a399346e96a7f2b.mp4'
     },
     {
         id: 14, 
-        title: 'Jesus está voltando',
-        desc: 'E você está preparado?',
+        title: '...',
+        desc: '...',
         url: 'https://i.pinimg.com/videos/thumbnails/originals/65/c6/f7/65c6f7c8d2a4e4f14f8fef18857747ce.0000000.jpg',
         video: 'https://v1.pinimg.com/videos/mc/720p/65/c6/f7/65c6f7c8d2a4e4f14f8fef18857747ce.mp4'
     },
     {
         id: 15, 
-        title: 'Jesus está voltando',
-        desc: 'E você está preparado?',
+        title: '...',
+        desc: '...',
         url: 'https://i.pinimg.com/videos/thumbnails/originals/63/25/f4/6325f4f25bd9c474a069576083be1905.0000000.jpg',
         video: 'https://v1.pinimg.com/videos/mc/720p/63/25/f4/6325f4f25bd9c474a069576083be1905.mp4'
+    },
+    {
+        id: 16,
+        title: '...',
+        desc: '...',
+        url: 'https://i.pinimg.com/videos/thumbnails/originals/8f/ce/76/8fce7642b14b116cc8e7366fb4729460.0000000.jpg',
+        video: 'https://v1.pinimg.com/videos/mc/720p/8f/ce/76/8fce7642b14b116cc8e7366fb4729460.mp4',
+    },
+    {
+        id: 17,
+        title: '...',
+        desc: '...',
+        url: 'https://i.pinimg.com/videos/thumbnails/originals/45/b9/4c/45b94c9f03f369ec70997c77cf2b7754.0000000.jpg',
+        video: 'https://v1.pinimg.com/videos/mc/720p/45/b9/4c/45b94c9f03f369ec70997c77cf2b7754.mp4',
+    },
+    {
+        id: 18,
+        title: '...',
+        desc: '...',
+        url: 'https://i.pinimg.com/videos/thumbnails/originals/49/4f/d8/494fd890ea3227ff79e7a5ab4ee9251b.0000000.jpg',
+        video: 'https://v1.pinimg.com/videos/mc/720p/49/4f/d8/494fd890ea3227ff79e7a5ab4ee9251b.mp4',
+    },
+    {
+        id: 19,
+        title: '...',
+        desc: '...',
+        url: 'https://i.pinimg.com/videos/thumbnails/originals/e9/a3/fc/e9a3fcedaa87adab99d387a8d98797e4.0000000.jpg',
+        video: 'https://v1.pinimg.com/videos/mc/720p/e9/a3/fc/e9a3fcedaa87adab99d387a8d98797e4.mp4',
+    },
+    {
+        id: 20,
+        title: '...',
+        desc: '...',
+        url: ' ',
+        video: ' ',
+    },
+    {
+        id: 21,
+        title: '...',
+        desc: '...',
+        url: ' ',
+        video: ' ',
+    },
+    {
+        id: 22,
+        title: '...',
+        desc: '...',
+        url: ' ',
+        video: ' ',
     },
 ]
