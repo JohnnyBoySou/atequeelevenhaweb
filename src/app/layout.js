@@ -5,37 +5,37 @@ const AmandineFont = localFont({
   name: "Amandine",
   src: [
     {
-      path: '../public/fonts/Amandine Bold.otf',
+      path: '@assets/fonts/Amandine Bold.otf',
       weight: '800',
       style: 'bold'
     },
     {
-      path: '../public/fonts/Amandine Bold Italic.otf',
+      path: '@assets/fonts/Amandine Bold Italic.otf',
       weight: '800',
       style: 'italic'
     },
     {
-      path: '../public/fonts/Amandine Regular.otf',
+      path: '@assets/fonts/Amandine Regular.otf',
       weight: '400',
       style: 'normal'
     },
     {
-      path: '../public/fonts/Amandine Light.otf',
+      path: '@assets/fonts/Amandine Light.otf',
       weight: '300',
       style: 'normal'
     },
     {
-      path: '../public/fonts/Amandine Light Italic.otf',
+      path: '@assets/fonts/Amandine Light Italic.otf',
       weight: '300',
       style: 'italic'
     },
     {
-      path: '../public/fonts/Amandine Medium.otf',
+      path: '@assets/fonts/Amandine Medium.otf',
       weight: '500',
       style: 'normal'
     },
     {
-      path: '../public/fonts/Amandine Medium Italic.otf',
+      path: '@assets/fonts/Amandine Medium Italic.otf',
       weight: '500',
       style: 'italic'
     },
@@ -50,37 +50,37 @@ const MundialFont = localFont({
   name: "Mundial",
   src: [
     {
-      path: '../public/fonts/Mundial Regular.otf',
+      path: '@assets/fonts/Mundial Regular.otf',
       weight: '400',
       style: 'normal'
     },
     {
-      path: '../public/fonts/Mundial Bold.otf',
+      path: '@assets/fonts/Mundial Bold.otf',
       weight: '800',
       style: 'bold'
     },
     {
-      path: '../public/fonts/Mundial Bold Italic.otf',
+      path: '@assets/fonts/Mundial Bold Italic.otf',
       weight: '800',
       style: 'italic'
     },
     {
-      path: '../public/fonts/Mundial Light.otf',
+      path: '@assets/fonts/Mundial Light.otf',
       weight: '300',
       style: 'normal'
     },
     {
-      path: '../public/fonts/Mundial Light Italic.otf',
+      path: '@assets/fonts/Mundial Light Italic.otf',
       weight: '300',
       style: 'italic'
     },
     {
-      path: '../public/fonts/Mundial Medium.otf',
+      path: '@assets/fonts/Mundial Medium.otf',
       weight: '500',
       style: 'normal'
     },
     {
-      path: '../public/fonts/Mundial Medium Italic.otf',
+      path: '@assets/fonts/Mundial Medium Italic.otf',
       weight: '500',
       style: 'italic'
     }
