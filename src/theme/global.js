@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from '@theme/colors';
+import colors from '../theme/colors';
 
 export const Main = styled.main`
   flex-direction: column;

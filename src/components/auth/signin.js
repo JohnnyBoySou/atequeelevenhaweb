@@ -1,12 +1,12 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import { Column, Row, Main, Title, Label, OutBt, Spacer, } from '@theme/global';
+import { Column, Row, Main, Title, Label, OutBt, Spacer, } from '../../theme/global';
 import Image from 'next/image';
-const login = require('@assets/imgs/login.png');
+const login = require('../../assets/imgs/login.png');
 import { GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
-import { auth } from '@api/firebase';
+import { auth } from '../../app/api/firebase';
 import { useRouter } from 'next/navigation';
-import { getUser, setUser } from '@hooks/useUser';
+import { getUser, setUser } from '../../hooks/useUser';
 
 export default function Signin() {
     const [user, setuser] = useState([]);

@@ -1,14 +1,14 @@
 'use client';
 import { ArrowUpRight, Menu, Search, } from 'lucide-react';
 import React  from "react";
-import { Column, Main, Row, Title, Spacer, CircleBt, Label, ButtonLight , } from '@theme/global';
+import { Column, Main, Row, Title, Spacer, CircleBt, Label, ButtonLight , } from '../theme/global';
 import Image from 'next/image';
 import Link from 'next/link';
-import colors from '@theme/colors';
-import Signin from '@components/auth/signin';
+import colors from '../theme/colors';
+import Signin from '../components/auth/signin';
 
-const logo = require('@assets/imgs/logo_sticker.png');
-const audio = require('@assets/imgs/audio.png');
+const logo = require('../assets/imgs/logo_sticker.png');
+const audio = require('../assets/imgs/audio.png');
 
 export default function Start() {
   return (

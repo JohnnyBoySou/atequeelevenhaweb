@@ -1,5 +1,5 @@
 import localFont from 'next/font/local'
-import StyledComponentsRegistry from './theme/registry'
+import StyledComponentsRegistry from '../theme/registry'
 import './reset.css'
 
 /*
