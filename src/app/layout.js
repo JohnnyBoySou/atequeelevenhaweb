@@ -1,6 +1,8 @@
 import localFont from 'next/font/local'
 import StyledComponentsRegistry from './theme/registry'
 import './reset.css'
+
+/*
 const AmandineFont = localFont({
   name: "Amandine",
   src: [
@@ -88,7 +90,7 @@ const MundialFont = localFont({
   variable: '--font-mundial',
   subsets: ['latin'],
 });
-
+*/
 
 export const metadata = {
   title: "Até que Ele venha",
@@ -97,10 +99,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" className={`${AmandineFont.variable} font-mono ${MundialFont.variable} font-sans`}>
+    <html lang="pt-BR" >
       <body >
           <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );
 }
+//className={`${AmandineFont.variable} font-mono ${MundialFont.variable} font-sans`}

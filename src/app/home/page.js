@@ -5,12 +5,12 @@ import React, { useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 //import colors from '@theme/colors';
-import { getUser } from '@hooks/useUser';
+//import { getUser } from '@hooks/useUser';
 //const logo = require('@assets/imgs/logo_sticker.png');
 //const audio = require('@assets/imgs/audio.png');
 
 export default function Home() {
-  const user = getUser();
+  //const user = getUser();
   const saudacao = new Date().getHours() < 12 ? 'Bom dia' : new Date().getHours() < 18 ? 'Boa tarde' : 'Boa noite';
   return (
     <div>
@@ -50,7 +50,7 @@ const Calendar = () => {
       </Row>
     </Column>
   )
- }
+}
 
  /**
   * return (
